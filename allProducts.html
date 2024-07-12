@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Product</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/CommonStyle.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar backgrd">
+            <div class="left-icons">
+                <div class="sidebar-menu" onclick=showSidebar()>
+                    <a href="#" ><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#ffffff" ><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a>
+                </div>
+                <nav class="sidebar backgrd txt-color">
+                    <ul >
+                        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f7cb65"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                        <li onclick=displaycat()>Filter By ▼
+                            <ul class="dropdown1">
+                                <li onclick=displaycat2()>Category ▼
+                                    <ul class="dropdown1-1">
+                                        <li id="beauty">Beauty</li>
+                                        <li id="Fragrance">Fragrance</li>
+                                        <li id="Furniture">Furniture</li>
+                                        <li id="Groceries">Groceries</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="logo">
+                    <a href="index.html">
+                        <h1 class="txt-color">Click & Buy</h1>                        
+                    </a>
+                </div>
+            </div>
+            <div class="middle-icon">
+                <input type="search" placeholder="Search..." id="searching">
+            </div>
+            <div class="right-icons">
+                <i class="fa-solid fa-user white-things"></i>
+                <i class="fa-solid fa-cart-shopping icons white-things"></i>
+                <a href="#" class="login white-things">LogIn</a>
+            </div>
+        
+        </div>
+        
+    </header>
+
+    <!-- Show All Products -->
+    <section style="background-color: #6c6c6c;">
+        <div id="all-productss" class="productContineer">
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="contents">
+            <div class="content-footer">
+                <h3>Address</h3>
+                <p>
+                    Name of street 12, Name of city,
+                    <span>Post code 123</span>
+                </p>
+                
+            </div>
+
+            <div class="content-footer">
+                <h3>Contact us</h3>
+                <p>
+                    info@feyer.com
+                    <span>123-456-7890</span>
+                </p>      
+            </div>
+
+            <div class="content-footer">
+                <h3>Follow</h3>
+                <p>
+                    Facebook
+                    <span>Instagram</span>
+                </p>
+            </div>
+        
+            <div class="content-footer">
+                <h3>Info</h3>
+                <p> 
+                    Shipping & returns
+                    <span>Privacy Policy</span>
+                    <span>Size guide</span>
+                    <span>Terms conditions</span>
+                </p>
+            </div>
+            
+
+        </div>
+    </footer>
+
+
+    <script src="Allproducts.js"></script>
+    
+    
+</body>
+</html>
