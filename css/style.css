@@ -104,7 +104,7 @@ a{
 
 }
 
-.products .allProducts,.product #addCart{
+.product .allProducts,.product #addCart{
     padding: 15px;
     border-radius: 10px;
     background-color: #f7cb65;
@@ -120,12 +120,12 @@ a{
     transition: all 0.3s;
 }
 
-.products .allProducts:hover,.product #addCart:hover{
+.product .allProducts:hover,.product #addCart:hover{
     border: 2px solid #f7cb65;
     background-color: #e58232;
 }
 
-.products .allProducts a,.product #addCart{
+.product .allProducts a,.product #addCart{
     color: white;
     font-family:"Wittgenstein" ;
     font-weight: bold;
@@ -193,166 +193,6 @@ a{
     margin-left: -5px;
 }
 
-/* singleProduct */
-.productContiner,.reviews{
-    padding: 20px 30px;
-}
-
-#singleProduct{
-    text-align: center;
-}
-.singleContent{
-    margin-bottom: 25px;
-}
-
-.singleContent #title{
-    font-size: 25px;
-    letter-spacing: 1.3px;
-    margin: 10px 0;
-}
-
-.singleContent #description, .reviewBox #comment{
-    width: 42%;
-    line-height: 1.4;
-    color: #808080;
-    margin: auto;
-    font-size: 19px;
-    font-weight: 500;
-    letter-spacing: 1.3px;
-}
-
-.singleContent #rating, .reviewBox #ratingReview{
-    font-size: 25px;
-    color: #f7cb65;
-    margin: 10px 0;
-}
-
-.singleContent .icons{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: -10px;
-}
-
-.singleContent .btn-icon{
-    background-color: #e58232;
-    width: 15px;
-    padding: 7px;
-    color: white;
-    border-radius: 5px;
-}
-
-.icons .count{
-    margin: 0 12px;
-    font-size: 22px;
-    color: #4d4d4d;
-}
-
-/* Review */
-.reviews{
-    background-color: #f5f7f9;
-}
-
-.reviews .reviewsBody{
-    margin: 4% 15%;
-}
-
-.reviews .reviewsBody .testimonial{
-    text-transform: uppercase;
-    font-size: 15px;
-    margin: 0;
-    letter-spacing: 1.3px;
-    color: #808080;
-    font-weight: 300;
-}
-.reviews .reviewsBody .testimonial{
-    margin: 10px 0;
-    font-size: 16px;
-    color: #4b4848;
-}
-.reviews .reviewsBody .customerSay{
-    margin-top: 10px;
-    font-size: 30px;
-    color: #484747;
-}
-
-.reviews #boxes{
-    display: flex;
-    justify-content: space-between;
-    gap: 25px;
-    margin-top: 30px;
-    position: relative;
-}
-
-.reviews #box{
-    background-color: white;
-    padding: 20px 31px 35px 31px;
-    width: 50%;
-    transition: 0.4s all;
-}
-/* .reviews #box::after{
-    content: "";
-    position: absolute;
-    top: 8px;
-    left: 9px;
-    border: 10px solid #6f696912;
-    background-color: transparent;
-    width: 46%;
-    height: 85%;
-    visibility: hidden;
-    transition: .3s;
-} */
-/* .reviews #box::after{
-    right: 10px;
-    content: "";
-    position: absolute;
-    top: 8px;
-    border: 10px solid #6f696912;
-    background-color: transparent;
-    width: 46%;
-    height: 85%;
-    visibility: hidden;
-    transition: .3s;
-}
-.reviews #boxes:hover .box::after{
-    visibility: visible;
-    transform: scaleX(-1);
-    
-}  */
-.reviews #boxes:hover #box::after{
-    visibility: visible;
-    transform: scaleX(-1);
-}
-
-.reviewBox #info{
-    display: flex;
-    align-items: center;
-}
-.reviewBox #info img{
-    width: 12%;
-    margin-right: 15px;
-}
-.reviewBox #comment{
-    margin: 0;
-    font-weight: bold;
-    width: 100%;
-    font-size: 20px;
-}
-.reviewBox #date{
-    margin: 15px 0;
-    font-weight: 200;
-    font-size: 15px;
-    letter-spacing: 1px;
-}
-.reviewBox #name{
-    color: #e58232;
-    margin: 0;
-}
-.reviewBox #email{
-    margin: 2px 0;
-    font-weight: 300;
-    color: #484747;
-}
 /* footer */
 .footer-section{
     background-color: #3b3b3b;
@@ -376,4 +216,3 @@ a{
 .footer-section .contents .content-footer span{
     display: block;
 }
-
