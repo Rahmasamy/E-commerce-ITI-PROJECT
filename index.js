@@ -10,7 +10,7 @@ fetch('https://dummyjson.com/products')
                 products.forEach(product => {
                     // create productBox
                     const productDiv = document.createElement('div');
-                    productDiv.className = 'product';
+                    productDiv.className = 'product shadow-div';
                     productDiv.id = `product-${product.id}`;
                     allProducts.appendChild(productDiv);
 
@@ -50,5 +50,11 @@ function hideSidebar(){
     const Sidebar =document.querySelector('.sidebar');
     Sidebar.style.display='none'
 }
+
+const liB = document.querySelector('.cbeauty');
+liB.addEventListener('click', function() {
+    window.location.href = 'allProducts.html';
+});
+
 
 

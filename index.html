@@ -21,13 +21,14 @@
                         <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#f7cb65"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
                         <li>Categories ▼
                             <ul class="dropdown">
-                                <li>Beauty</li>
+                                <li class="cbeauty">Beauty</li>
                                 <li>Fragrance</li>
                                 <li>Furniture</li>
                                 <li>Groceries</li>
                             </ul>
                         </li>
-                        <li>Filter</li>
+                        <li>All Products</li>
+                        
                     </ul>
                 </nav>
 
@@ -52,33 +53,98 @@
         </div>
         
     </header>
-    <div class="container">
-        <section class="first-section">
-          
+    <section class="first-section">
+       <div class="container">
          <div class="img-div">
-            <img src="sale-img.png">
+             <img src="sale-img.png">
          </div>
+         
+      </div>
     
     </section>
+
     <h1 class="gray-things cat-header" style="text-align: center;">Shop By Category</h1>
     <section class="category-section gray-things">
-        <div class="shadow-div">
-            <div><img src="grocery-list.jpg"></div><p>Groceries</p>
+        <div class="wrapper">
+            <div class="wrapper-IMG">
+                <img src="grocery-list.jpg">
+                <div class="content">
+                  <h1>
+                    Groceries
+                  </h1>  
+                </div>
+            </div>
         </div>
-        <div class="shadow-div">
-            <div cat-img-div><img src="cosmetics.webp"></div><p>Cosmetics</p>
+        <div class="wrapper">
+            <div class="wrapper-IMG">
+                    <img src="cosmetics.webp">
+                    <div class="content">
+                      <h1>
+                        Cosmetics
+                      </h1>  
+                    </div>
+            </div>
         </div>
-        <div class="shadow-div">
-            <div><img src="Fragrances.webp"></div><p>Fragrances</p>
+        <div class="wrapper">
+            <div class="wrapper-IMG">
+                    <img src="Fragrances.webp">
+                    <div class="content">
+                      <h1>
+                        Fragrances
+                      </h1>  
+                    </div>
+            </div>
         </div>
-        <div class="shadow-div">
-            <div><img src="furniture_1.webp"></div><p>Furtinure</p>
+        <div class="wrapper">
+            <div class="wrapper-IMG">
+                    <img src="furniture_1.webp">
+                    <div class="content">
+                      <h1>
+                        Furtinure
+                      </h1>  
+                    </div>
+            </div>
         </div>
     </section>
+    
     <section>
-        
+        <div class="banner">
+            <div class="banner-div">
+                <div class="banner-div-img">
+                    <img src="Fast-shipping.png" class="filter-white">
+                </div>
+                <div>
+                    <p class="white-things">Fast and Secure Shipping</p>
+                </div>
+            </div>
+            <div class="banner-div">
+                <div class="banner-div-img">
+                    <img src="best-quality.png" class="filter-white" >
+                </div>
+                <div>
+                    <p class="white-things">Guaranteed Quality</p>
+                </div>
+            </div>
+            <div class="banner-div">
+                <div class="banner-div-img">
+                    <img src="best-deal.png" class="filter-white">
+                </div>
+                <div>
+                    <p class="white-things">  Best Deals Offers</p>
+                </div>
+            </div>
+            <div class="banner-div">
+                <div class="banner-div-img">
+                    <img src="secure.png" class="filter-white">
+                </div>
+                <div>
+                    <p class="white-things">Secure Shopping and Payment</p>
+                </div>
+            </div>
+        </div>
     </section>
-
+    
+    <h1 class="gray-things cat-header" style="text-align: center;">Featured Products</h1>
     <section class="products">
         <div id="products" class="productContineer">
             <!-- DivProductBox, Image, Title and Price  -->
@@ -135,6 +201,7 @@
     </footer>
 
     <script src="index.js"></script>
+    <script src="Allproducts.js"></script>
     
 </body>
 </html>
