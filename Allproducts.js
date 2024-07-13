@@ -43,28 +43,28 @@ fetch('https://dummyjson.com/products')
                     
                 });
                 console.log(output)
-                const b = document.getElementById('beauty');
+                const b = document.querySelector('.cbeauty');
                 b.addEventListener('click', () => {
                 output.forEach(product => {
                   const isVisible = (product.product_category === 'beauty');
                   product.Element.classList.toggle('hide', !isVisible);
                   });
                });
-               const f = document.getElementById('Fragrance');
+               const f = document.querySelector('.cFragrance');
                 f.addEventListener('click', () => {
                 output.forEach(product => {
                   const isVisible = (product.product_category === 'fragrances');
                   product.Element.classList.toggle('hide', !isVisible);
                   });
                });
-               const fu = document.getElementById('Furniture');
+               const fu = document.querySelector('.cFurniture');
                 fu.addEventListener('click', () => {
                 output.forEach(product => {
                   const isVisible = (product.product_category === 'furniture');
                   product.Element.classList.toggle('hide', !isVisible);
                   });
                });
-               const  g= document.getElementById('Groceries');
+               const  g= document.querySelector('.cGroceries');
                 g.addEventListener('click', () => {
                 output.forEach(product => {
                   const isVisible = (product.product_category === 'groceries');
