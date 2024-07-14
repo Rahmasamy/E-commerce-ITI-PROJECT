@@ -6,13 +6,14 @@
     <title>Single Product</title>
     <link rel="stylesheet" href="./css/all.min.css">
     <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/singleProduct.css">
     <link rel="stylesheet" href="./css/style.css">
+
 </head>
 <body>
     <header>
         <div class="top-bar">
             <div class="left-icons">
-                <i class="fa-solid fa-list-ul icons list-icon white-things"></i>
 
                 <div class="logo">
                     <a href="index.html">
@@ -23,7 +24,9 @@
 
             <div class="right-icons">
                 <i class="fa-solid fa-user white-things"></i>
-                <i class="fa-solid fa-cart-shopping icons white-things"></i>
+                <i class="fa-solid fa-cart-shopping white-things cart-icon">
+                    <span  id="cart-num"></span>
+                </i>
                 <a href="#" class="login white-things">LogIn</a>
             </div>
         
@@ -34,20 +37,61 @@
     <!-- single Product -->
     <div class="product">
         <div id="singleProduct">
-            <img id="image" src="" alt="product">
+            <div class="image">
+                <img id="image" src="" alt="product">
+            </div>
             <div class="singleContent">
                 <h3 id="title"></h3>
                 <h5 id="description"></h5>
                 <p id="rating"></p>
                 <p id="price"></p>
+               
+
+                <div class="product-imgs" id="product-imgs">
+                 
+                </div>
+                <button id="addCart">
+                    <a href="#">
+                        Add To Cart
+                    </a>
+                </button>
+                <div class="icons">
+                    <i class="fa-solid fa-minus btn-icon" id="minus"></i>
+                    <p class="count" id="count">1</p>
+                    <i class="fa-solid fa-plus btn-icon" id="plus"></i>
+                </div>
+            </div>
+           
+        </div>
+        <div class="cart" id="cart">
+            <div class="img-single-content">
+                <div class="image" id="image">
+                    <img id="imagecart" src="" alt="product">
+                </div>
+                <div class="singleContent">
+                    <h3 id="titlecart"></h3>
+                    <h5 id="descriptioncart"></h5>
+                    <p id="ratingcart"></p>
+                    <p id="pricecart"></p>
+                  
+                  
+                </div>
+            </div>
+           
+        </div>
+        <div class="reviews">
+            <div class="reviewsBody">
+                <h6 class="testimonial">Testimonial</h6>
+                <h2 class="customerSay">What Our Customers Say</h2>
+
+                <div class="reviewBox">
+                    <div id="boxes">
+                        <!-- Rate,comment,name,email -->
+                    </div>
+                </div>
             </div>
         </div>
 
-        <button id="addCart">
-            <a href=".html">
-                Add To Cart
-            </a>
-        </button>
     </div>
 
     <!-- footer -->
@@ -93,7 +137,9 @@
     </footer>
 
 
-    <script src="singleProduct.js"></script>
+    <script src="InsertDivIntoCart.js"></script>
+    <script type="module" src="./addToCartSingleProduct.js"></script>
+    <script type="module" src="./singleProduct.js"></script>
 
 </body>
 </html>

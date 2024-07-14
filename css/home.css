@@ -1,0 +1,274 @@
+.filter-white{
+    filter: brightness(0) saturate(100%) invert(66%) sepia(80%) saturate(2676%) hue-rotate(342deg) brightness(97%) contrast(84%);
+}
+
+#slider{
+    overflow: hidden;
+}
+#slider figure{
+    position: relative;
+    width: 400%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#slider figure img{
+    float: left;
+    width: 25%;
+}
+ @keyframes slider {
+    0%{
+        left: 0;
+    }
+    20%{
+        left: 0;
+    }
+    25%{
+        left: -100%;
+    }
+    45%{
+        left: -100%;
+    }
+    50%{
+        left: -200%;
+    }
+    70%{
+        left: -200%;
+    }
+    95%{
+        left: -300%;
+    }
+    100%{
+        left: -300%;
+    }
+
+ }
+img{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+.first-txt{
+    font-size: 50px;
+}
+.sec-txt{
+    font-size: 40px;
+}
+
+/* Get Products */
+.productContineer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    gap: 80px;
+    background-color: #fff;
+    
+}
+
+
+.products .allProducts,.product #addCart{
+    padding: 15px;
+    border-radius: 10px;
+    border-color: #e58232;
+    border-width: 2px;
+    border-style: solid;
+    /* border: 2px solid #e58232; */
+    margin: 35px auto;
+    display: block;
+    width: 190px;
+    color: white;
+    background-color: #e58232;
+    font-size: 17px;
+}
+
+.products .allProducts a,.product #addCart{
+    color: white;
+    font-family:"Wittgenstein" ;
+    font-weight: bold;
+    text-decoration: none;
+    
+}
+/* Base Styles */
+.cat-header::after {
+    width: 50px;
+    height: 1px;
+    background: #e58232;
+    content: '';
+    display: block;
+    position: relative;
+    margin-top: 20px;
+    left: 50%;
+    right: initial;
+    transform: translate3d(-50%, 0, 0);
+}
+
+.category-section {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    flex-wrap: wrap; 
+}
+
+.category-section .wrapper {
+    width: 100%;
+    max-width: 25%;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box; 
+}
+
+.wrapper-IMG {
+    width: 100%;
+    position: relative;
+}
+
+.wrapper-IMG img {
+    width: 100%;
+    height: auto;
+    max-height: 235px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+
+@media (max-width: 1200px) {
+    .category-section .wrapper {
+        max-width: 33.33%; 
+    }
+}
+
+@media (max-width: 900px) {
+    .category-section .wrapper {
+        max-width: 50%; 
+    }
+}
+
+@media (max-width: 600px) {
+    .category-section {
+        flex-direction: column; 
+    }
+
+    .category-section .wrapper {
+        max-width: 100%; 
+    }
+
+    .wrapper-IMG img {
+        max-height: none; 
+    }
+}
+
+.content:hover{
+    /*transform: scale(1.07);
+    transition: 0.5s; */
+    opacity: 1;
+}
+.content,h1{
+    font-size: 50px;
+    color: #e58232;
+}
+.banner {
+    background-color: #3b3b3b;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+
+.banner-div {
+    margin-top: 10px;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    
+}
+
+.banner-div-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; 
+}
+
+.banner-div-img img {
+    width: 50px; 
+    height: 50px; 
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .banner-div {
+        width: 50%; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-div {
+        width: 100%; 
+        margin-bottom: 20px; 
+    }
+}
+
+
+
+.shadow-div:hover{
+    box-shadow: 3px 3px 5px grey;
+    transition: 0.5s;
+    transform: scale(1.09);
+    z-index: 300;
+}
+
+
+.hide{
+    display: none;
+}
+
+/* singleProduct */
+.product{
+    padding: 40px 60px;
+}
+
+.product #singleProduct{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+
+#singleProduct #description{
+    width: 50%;
+    line-height: 1.2;
+    color: #808080;
+}
+
+.product #addCart{
+    top: 50%;
+    position: absolute;
+    left: 20%;
+    color: #fff;
+}

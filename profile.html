@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Profile</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <style type="text/css">
+        .Profile {
+            margin: auto;
+            width: 80%;
+            padding: 5px;
+        }
+        
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="top-bar backgrd">
+            <div class="left-icons">
+                <div class="logo">
+                    <a href="home.html">
+                        <h1 class="txt-color txt">Click & Buy</h1>                        
+                    </a>
+                </div>
+            </div>
+            <div class="right-icons">
+                <a href="profile.html" class="fa-solid fa-user white-things"></a>
+                <a href="CartPage.html" class="fa-solid fa-cart-shopping icons white-things"></a>
+                <a href="home.html" id="logoutButton">Logout</a>
+                <a href="loginRegister.html" class="login white-things">LogIn</a>
+            </div>
+            
+        
+        </div>
+        
+    </header>
+    <br>
+    <section class="Profile">
+        <section class="Profile border-bottom border">
+            <div class="card mb-3" style="max-width: 540px; border: none; padding: 30px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="./imgs/person1.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title orange-things">Name</h5>
+                            <p id="user__name" ></p>
+                            <h5 class="card-title  orange-things ">Email</h5>
+                            <p id="user__email"></p>
+                            <h5 class="card-title orange-things">PHONE</h5>
+                            <p id="user__phone"></p>
+                            <h5 class="card-title orange-things">Gender</h5>
+                            <p id="user__gender"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="profile.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
