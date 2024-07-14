@@ -1,20 +1,43 @@
-const img = document.getElementById('image');
-const title = document.getElementById('title');
-const descrip = document.getElementById('description');
-const rate = document.getElementById('rating');
-const price = document.getElementById('price');
+import { fetchProduct } from './fetchProduct.js';
 
-// fetch('https://dummyjson.com/products/`${product.id}`')
-fetch('https://dummyjson.com/products/1')
-            .then(res => res.json())
-            .then(data => {
-                const product = data;
+import { displayProduct } from './assignDataOfUser.js';
 
-                img.src = `${product.thumbnail}`
-                title.innerHTML = `${product.title}`
-                descrip.innerHTML = `${product.description}`
-                rate.innerHTML = `rating: ${product.rating}`
-                price.innerHTML = `$${product.price}`
+import CreateReviews  from './Reviews.js';
 
-            })
-            .catch(error => console.error('Error fetching data:', error));
+import CardOperations from './CardOperations.js'
+
+const imgConatiner=document.getElementsByClassName('image')[0];
+
+document.addEventListener('DOMContentLoaded', async (event) => {
+    imgConatiner.style.display="block";
+    // Check if we are on the singleProduct.html page
+    if (window.location.pathname.includes('singleProduct.html')) {
+        // Extract product ID from the query string
+        const urlParams = new URLSearchParams(window.location.search);
+        const productId = urlParams.get('id');
+        
+        if (productId) {
+            // Display the single product that was clicked.
+            const product = await fetchProduct(productId);
+            
+            if (product) {
+                displayProduct(product);
+                CreateReviews(product);
+            }
+        } else {
+            console.error('Product ID not found in the URL');
+        }
+    }
+});
+CardOperations();
+
+// Function Display the value to show the number of items added to the cart
+
+
+addCart.addEventListener('click',function(){
+    if(finalNum === 1){
+        cartNum.textContent = "1";
+    }else{
+        cartNum.textContent = finalNum
+    }
+});
